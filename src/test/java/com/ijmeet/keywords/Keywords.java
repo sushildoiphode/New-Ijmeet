@@ -10,7 +10,10 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import javax.imageio.ImageIO;
 
@@ -233,6 +236,35 @@ public class Keywords {
 		return Constant.count;
 	}
 
+	public static boolean displayListOfItems(String locatorType, WebElement locatorValue,String tagname) {
+		boolean Visible_menuItems= false;
+		WebElement menuItems= getWebElement(locatorType, locatorValue);
+		List<WebElement> elements=menuItems.findElements(By.tagName(tagname));
+		Iterator<WebElement> itr=elements.iterator();
+		List<String> itemsList=new ArrayList<String>();
+		while(itr.hasNext()) {
+			Visible_menuItems=itr.next().isDisplayed();
+			System.out.println(Visible_menuItems);
+		}
+
+		return Visible_menuItems;
+	}
+
+	public static String switchToChildWindow() {
+		String url=null;
+		String mainwindow = Constant.driver.getWindowHandle();
+		Set<String> set = Constant.driver.getWindowHandles();
+		Iterator<String> itr = set.iterator();
+		while (itr.hasNext()) {
+			String childwindow = itr.next();
+			if (!mainwindow.equals(childwindow)) {
+				Constant.driver.switchTo().window(childwindow);
+				url=Constant.driver.switchTo().window(childwindow).getCurrentUrl();
+			}
+		}
+		return url;
+	}
+	
 	public static void closeBrowser() {
 		Constant.driver.close();
 	}
