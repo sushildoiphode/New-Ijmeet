@@ -1,0 +1,6 @@
+2020-Oct-09 10:35:10,873 [main] com.ijmeet.keywords.Keywords 
+  INFO   Url is launch successfully
+2020-Oct-09 10:35:14,156 [main] com.ijmeet.functionaltests.HomePageTests 
+  INFO  IJMEET_HomePage is visible
+2020-Oct-09 10:35:16,935 [main] com.ijmeet.functionaltests.HomePageTests 
+  INFO  logo is presentfalse
