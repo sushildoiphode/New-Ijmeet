@@ -1,0 +1,4 @@
+2020-Oct-14 12:02:47,033 [main] com.ijmeet.keywords.Keywords 
+  INFO   Url is launch successfully
+2020-Oct-14 12:02:56,968 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 

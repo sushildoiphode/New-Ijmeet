@@ -44,14 +44,17 @@ public class Keywords {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
 			Constant.driver = new ChromeDriver();
+			log.info("Open Browser Chrome");
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
 			Constant.driver = new FirefoxDriver();
+			log.info("Open Browser Firefox");
 			break;
 		case "IE":
 			WebDriverManager.iedriver().setup();
 			Constant.driver = new InternetExplorerDriver();
+			log.info("Open Browser Internate Explorer");
 			break;
 
 		default:
@@ -66,10 +69,12 @@ public class Keywords {
 
 	public static void clearCookies() {
 		Constant.driver.manage().deleteAllCookies();
+		log.info("Clean all Cookies");
 	}
 
 	public static void maximizeBrowser() {
 		Constant.driver.manage().window().maximize();
+		log.info("Window get maximize");
 	}
 
 	public static void navigateBack() {
@@ -184,6 +189,7 @@ public class Keywords {
 			Rectangle rect = new Rectangle(d);
 			BufferedImage image = robo.createScreenCapture(rect);
 			ImageIO.write(image, "png", file);
+			log.info("Screen shot save in Folder path "+ file);
 		} catch (AWTException e) {
 			System.err.println("unable to take Screenshot");
 			e.printStackTrace();
@@ -217,14 +223,16 @@ public class Keywords {
 			System.out.println("Folder not Created");
 		}
 		File file = new File(f, "/screenshot_" + getDateAndTime() + ".png");
+		
 		AShot ashot = new AShot();
 		Screenshot sc = ashot.shootingStrategy(ShootingStrategies.viewportPasting(2000))
 				.takeScreenshot(Constant.driver);
-		try {
-			ImageIO.write(sc.getImage(), "PNG", file);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+			try {
+				ImageIO.write(sc.getImage(), "PNG", file);
+				log.info("Screen shot save in Folder path "+ file);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 	}
 
 	public static int displayListCount(String locatorType, WebElement locatorValue) {
