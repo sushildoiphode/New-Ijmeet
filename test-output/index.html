@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,6 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\abc\AppData\Local\Temp\testng-eclipse--1464683293\testng-customsuite.xml</span>
                     <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1590683886\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +92,22 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+                    <span class="method-stats">1 method,   1 passed</span>
                     <span class="method-stats">18 methods, 1 failed,  4 skipped,  13 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ijmeet.functionaltests.SignInPageTest" hash-for-method="verifyForgotYourPasswordVisibilityTest">verifyForgotYourPasswordVisibilityTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ijmeet.functionaltests.ContactSalesTest" hash-for-method="toVerifyEmailIDText">toVerifyEmailIDText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -220,14 +222,20 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ijmeet.functionaltests.SignInPageTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.ijmeet.functionaltests.ContactSalesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="toVerifyEmailIDText">
+                  </a> <!-- toVerifyEmailIDText -->
+                  <span class="method-name">toVerifyEmailIDText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
                   <a name="verifyForgotYourPasswordVisibilityTest">
                   </a> <!-- verifyForgotYourPasswordVisibilityTest -->
                   <span class="method-name">verifyForgotYourPasswordVisibilityTest</span>
@@ -653,6 +661,7 @@ Session ID: 3d6088f274be8f129a1f752088aedda0
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\abc\AppData\Local\Temp\testng-eclipse--1464683293\testng-customsuite.xml</span>
             <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1590683886\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
@@ -662,6 +671,11 @@ Session ID: 3d6088f274be8f129a1f752088aedda0
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.ijmeet.functionaltests.ContactSalesTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;toVerifyEmailIDText&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.ijmeet.functionaltests.ContactSalesTest --&gt;
       &lt;class name=&quot;com.ijmeet.functionaltests.SignInPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
@@ -704,6 +718,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(18);
 data.setCell(0, 0, 0)
+data.setCell(0, 1, 'toVerifyEmailIDText')
+data.setCell(0, 2, 'com.ijmeet.functionaltests.ContactSalesTest')
+data.setCell(0, 3, 83);
 data.setCell(0, 1, 'verifySinInWithFacebookButtonClickabilityTest')
 data.setCell(0, 2, 'com.ijmeet.functionaltests.SignInPageTest')
 data.setCell(0, 3, 5126);
@@ -779,6 +796,7 @@ window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 83 ms</span>
               <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
@@ -794,6 +812,34 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ijmeet.functionaltests.ContactSalesTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">isEmailTextBoxClickableTest</span>
+                <br/>
+                <span class="ignored-method-name">isNameTextBoxAvailableTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyContactSalesPageTest</span>
+                <br/>
+                <span class="ignored-method-name">isNameTextBoxClickableTest</span>
+                <br/>
+                <span class="ignored-method-name">toVerifyWhatsAppNoText</span>
+                <br/>
+                <span class="ignored-method-name">isEmailTextBoxAvailableTest</span>
+                <br/>
+                <span class="ignored-method-name">toVerifyAddressText</span>
+                <br/>
+                <span class="ignored-method-name">isMessageTextBoxAvailableTest</span>
+                <br/>
+                <span class="ignored-method-name">isMessageTextBoxClickableTest</span>
+                <br/>
+                <span class="ignored-method-name">toVerifyMobileNoText</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
@@ -805,6 +851,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.ijmeet.functionaltests.ContactSalesTest</div> <!-- chronological-class-name -->
               <div class="chronological-class-name">com.ijmeet.functionaltests.SignInPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySinInWithFacebookButtonVisibilityTest</span>
@@ -827,6 +874,17 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <span class="method-name">initializePage</span>
+                <span class="method-start">37991 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">toVerifyEmailIDText</span>
+                <span class="method-start">43878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">43964 ms</span>
+              </div> <!-- configuration-class after -->
                 <span class="method-name">clickOnSignInBtn</span>
                 <span class="method-start">47637 ms</span>
               </div> <!-- configuration-method before -->

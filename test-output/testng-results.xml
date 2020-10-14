@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="10" total="11" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44067" started-at="2020-10-14T09:05:43Z" finished-at="2020-10-14T09:06:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44067" started-at="2020-10-14T09:05:43Z" finished-at="2020-10-14T09:06:27Z">
+      <class name="com.ijmeet.functionaltests.ContactSalesTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@7adda9cc]" name="openBrowser" is-config="true" duration-ms="37972" started-at="2020-10-14T09:05:43Z" finished-at="2020-10-14T09:06:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="initializePage()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@7adda9cc]" name="initializePage" is-config="true" duration-ms="5887" started-at="2020-10-14T09:06:21Z" finished-at="2020-10-14T09:06:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method status="PASS" signature="toVerifyEmailIDText()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@7adda9cc]" name="toVerifyEmailIDText" duration-ms="83" started-at="2020-10-14T09:06:27Z" finished-at="2020-10-14T09:06:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toVerifyEmailIDText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@7adda9cc]" name="closeBrowser" is-config="true" duration-ms="90" started-at="2020-10-14T09:06:27Z" finished-at="2020-10-14T09:06:27Z">
 <testng-results skipped="4" failed="1" ignored="0" total="18" passed="13">
   <reporter-output>
   </reporter-output>
@@ -579,7 +600,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->
+      </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

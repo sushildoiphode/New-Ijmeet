@@ -95,7 +95,30 @@ public class ContactSalesTest extends TestBase {
 	public void toVerifyAddressText() {
 		String actualAddress=contact.verifyAddressContents();
 		System.out.println(actualAddress);
-		
+		String expectedAddress="United security Building, 3rd floor.\n" + 
+				"Gala Muscat, Oman";
+		Assert.assertEquals(actualAddress, expectedAddress);
+	}
+	@Test
+	public void toVerifyWhatsAppNoText() {
+		String actualNo=contact.verifyWhatsappText();
+		System.out.println(actualNo);
+		String expectedNo="+968 7246 7778";
+		Assert.assertEquals(actualNo, expectedNo);
+	}
+	@Test
+	public void toVerifyMobileNoText() {
+		String actualMobileNo=contact.verifyMobileNoText();
+		String expectedMobileNo="+968 2422 2415";
+		System.out.println(actualMobileNo);
+		Assert.assertEquals(actualMobileNo, expectedMobileNo);
+	}
+	@Test
+	public void toVerifyEmailIDText() {
+		String actualEmailId=contact.verifyEmailIdText();
+		String expectedEmailId="info@ijtimaati.com";
+		System.out.println(actualEmailId);
+		Assert.assertEquals(actualEmailId, expectedEmailId);
 	}
 	
 
