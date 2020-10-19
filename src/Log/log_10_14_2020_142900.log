@@ -1,0 +1,6 @@
+2020-Oct-14 14:28:14,484 [main] com.ijmeet.keywords.Keywords 
+  INFO  Open Browser Chrome
+2020-Oct-14 14:28:50,702 [main] com.ijmeet.keywords.Keywords 
+  INFO   Url is launch successfully
+2020-Oct-14 14:28:59,197 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Forgot password link is visible on Sign In page

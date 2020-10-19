@@ -6,12 +6,8 @@
       <class name="com.ijmeet.functionaltests.SignInPageTest">
         <methods>
           <include name="clickOnSignInBtn"/>
-          <include name="verifySinInWithGoogleButtonVisibilityTest"/>
           <include name="closeBrowser"/>
-          <include name="verifySinInWithFacebookButtonVisibilityTest"/>
-          <include name="verifyTitleOnSignInPage"/>
           <include name="verifyForgotYourPasswordVisibilityTest"/>
-          <include name="verifySinInWithGoogleButtonClickabilityTest"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->

@@ -10,43 +10,38 @@ public class TestCasesListener implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("On Test Start");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("On Test Success");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
+		System.out.println("On Test Failure. Screen shot will save in folder");
 		Keywords.getScreenShot();
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("On Test Skipped");		
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("On Test Failed But Within Success Percentage");
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("On Test Start with content");		
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("On Test Finish");		
 	}
 	
 	

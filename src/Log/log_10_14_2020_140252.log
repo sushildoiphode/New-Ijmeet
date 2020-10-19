@@ -1,0 +1,20 @@
+2020-Oct-14 14:02:06,759 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 
+2020-Oct-14 14:02:10,395 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 
+2020-Oct-14 14:02:14,276 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Password Label is available on Sign In page
+2020-Oct-14 14:02:18,444 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Password textbox is visible on Sign In page
+2020-Oct-14 14:02:22,673 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Checkbox is Clickable
+2020-Oct-14 14:02:26,702 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign In button visible true
+2020-Oct-14 14:02:31,754 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign In heading text is available on Sign In page
+2020-Oct-14 14:02:38,636 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign Up link then it navigate to Sign Up page. i.e https://ijmeet.com/register
+2020-Oct-14 14:02:42,695 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign Up link visible true
+2020-Oct-14 14:02:51,711 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign In with Facebook button then it navigate to Facebook page. i.e Log in to Facebook | Facebook

@@ -1,0 +1,10 @@
+2020-Oct-14 14:32:01,425 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign In with Facebook button then it navigate to Facebook page. i.e Log in to Facebook | Facebook
+2020-Oct-14 14:32:05,837 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign in with Facebook button is visible on Sign in page
+2020-Oct-14 14:32:13,380 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign In with Google + button then it navigate to Gmail page. i.e Sign in – Google accounts
+2020-Oct-14 14:32:17,357 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign in with Google + button is visible on Sign in page
+2020-Oct-14 14:32:21,150 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Title name: IJmeet

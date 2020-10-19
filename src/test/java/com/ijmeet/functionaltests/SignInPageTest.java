@@ -76,8 +76,9 @@ public class SignInPageTest extends TestBase{
 	}
 	
 	@Test
-	public void verifyForgotYourPasswordVisibilityTest() {
+	public void verifyForgotYourPasswordVisibilityTest() throws InterruptedException {
 		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
+		Thread.sleep(5000);
 		boolean forgotPassword=sign.isForgotYourPasswordLinkVisible();
 		Assert.assertTrue(forgotPassword,"Forgot your password link not visible");
 		log.info("Forgot password link is visible on Sign In page");
@@ -105,6 +106,7 @@ public class SignInPageTest extends TestBase{
 		FEKeywords.clickOnElement("XPATH", FileUtil.getProperty("SignIn.signuplink"));
 		String actualUrl=Constant.driver.getCurrentUrl();
 		String expectedUrl="https://ijmeet.com/register";
+		Keywords.navigateBack();
 		Assert.assertEquals(actualUrl, expectedUrl);
 		log.info("If user click on Sign Up link then it navigate to Sign Up page. i.e "+ actualUrl);
 	}
@@ -129,6 +131,7 @@ public class SignInPageTest extends TestBase{
 		sign.isSignInWithGooglebuttonClickable();
 		String actualTitle=Constant.driver.getTitle();
 		String expectedTitle="Sign in – Google accounts";
+		Keywords.navigateBack();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		log.info("If user click on Sign In with Google + button then it "
 				+ "navigate to Gmail page. i.e "+ actualTitle);	
@@ -143,11 +146,12 @@ public class SignInPageTest extends TestBase{
 	}
 	
 	@Test
-	public void verifySinInWithFacebookButtonClickabilityTest() {
+	public void verifySinInWithFacebookButtonClickabilityTest() throws InterruptedException {
 		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
 		sign.isSignInWithFacebookbuttonClickable();
 		String actualTitle=Constant.driver.getTitle();
 		String expectedTitle="Log in to Facebook | Facebook";
+		Keywords.navigateBack();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		log.info("If user click on Sign In with Facebook button then it "
 				+ "navigate to Facebook page. i.e "+ actualTitle);	

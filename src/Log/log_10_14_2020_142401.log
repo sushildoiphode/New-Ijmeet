@@ -1,0 +1,18 @@
+2020-Oct-14 14:24:01,376 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Checkbox is Clickable
+2020-Oct-14 14:24:05,419 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign In button visible true
+2020-Oct-14 14:24:09,351 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign In heading text is available on Sign In page
+2020-Oct-14 14:24:16,812 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign Up link then it navigate to Sign Up page. i.e https://ijmeet.com/register
+2020-Oct-14 14:24:20,773 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign Up link visible true
+2020-Oct-14 14:24:35,993 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign In with Facebook button then it navigate to Facebook page. i.e Log in to Facebook | Facebook
+2020-Oct-14 14:24:41,780 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign in with Facebook button is visible on Sign in page
+2020-Oct-14 14:24:51,725 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign In with Google + button then it navigate to Gmail page. i.e Sign in – Google accounts
+2020-Oct-14 14:24:55,661 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign in with Google + button is visible on Sign in page
