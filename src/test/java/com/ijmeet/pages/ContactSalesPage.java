@@ -36,12 +36,27 @@ public class ContactSalesPage {
 	@FindBy(xpath="//h4[text()=' Address ']")
 	public static WebElement address;
 	
-	@FindBy(xpath="//h4[text()=' Address ']")
+	@FindBy(xpath="//div/div//div/div/p[text()=' United security Building, 3rd floor. ']")
 	public static WebElement address1;
+	
+//	@FindBy(xpath="//div/div//div/div/p[text()=' United security Building, 3rd floor. ']/br")
+//	public static WebElement address2;
+	
+	@FindBy(xpath="//p[text()='	+968 7246 7778']")
+	public static WebElement whatsapp;
+	
+	@FindBy(xpath="//p[text()='+968 2422 2415']")
+	public static WebElement mobileNo;
+	
+	@FindBy(xpath="//p[text()='info@ijtimaati.com                            ']")
+	public static WebElement emailId;
+	
+	
+	
 
 
 	public static boolean isUserNameCheckBoxVisible() {
-		boolean verify = Keywords.isElementDisplayed("XPATH", userName);
+		boolean verify = Keywords.isElementDisplayed("css", userName);
 		return verify;
 	}
 
@@ -90,13 +105,23 @@ public class ContactSalesPage {
 		Keywords.clickOnElement("XPATH", captcha);
 	}
 	public String verifyAddressContents() {
-		String[] text=null;
-	text[0]=address.getAttribute("value");
-//	text[1]=
-	System.out.println(text[0]);
-		
-		return text[0];
-		
+	//	String text=address.getText();
+		String text=address1.getText();
+		return text;
 	}
+	public String verifyWhatsappText() {
+			String text=whatsapp.getText();
+			return text;
+		}
+	
+	public String verifyMobileNoText() {
+		String text=mobileNo.getText();
+		return text;
+	}
+	public String verifyEmailIdText() {
+		String text=emailId.getText();
+		return text;
+	}
+	
 
 }
