@@ -1,4 +1,4 @@
-package com.ijmeet.util;
+package com.ijmeet.base;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -20,6 +20,7 @@ public class TestBase {
 	@AfterClass
 	public void closeBrowser() {
 		Keywords.closeBrowser();
+		Keywords.quitBrowser();
 	}
 	
 	
