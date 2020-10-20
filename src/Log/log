@@ -1,2 +1,6 @@
-2020-Oct-14 14:36:18,360 [main] com.ijmeet.keywords.Keywords 
+2020-Oct-18 13:35:29,375 [main] com.ijmeet.keywords.Keywords 
   INFO   Url is launch successfully
+2020-Oct-18 13:35:49,185 [main] com.ijmeet.keywords.Keywords 
+  INFO   Invalid selector type
+2020-Oct-18 13:35:50,505 [main] com.ijmeet.keywords.Keywords 
+  INFO  ContactSalesPage is available for IJmeet
