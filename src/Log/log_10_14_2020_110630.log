@@ -1,0 +1,4 @@
+2020-Oct-14 11:06:20,920 [main] com.ijmeet.keywords.Keywords 
+  INFO   Url is launch successfully
+2020-Oct-14 11:06:29,049 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign in with Facebook button is visible on Sign in page

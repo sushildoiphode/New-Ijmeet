@@ -25,7 +25,10 @@ public class SignInpage {
 	private static WebElement passwordTextbox;
 	@FindBy(xpath = "//a[@class='auth-link text-black']")
 	private static WebElement forgotYourPasswordLink;
-	
+	@FindBy(xpath = "//a[@class='social-login-button social-login-button-google']")
+	private static WebElement signInWithGooglebutton;
+	@FindBy(xpath = "//a[@class='social-login-button social-login-button-facebook']")
+	private static WebElement signInWithFacebookbutton;
 	
 	public static String isSignInTextVisible() {
 		return signInText.getText();
@@ -45,5 +48,22 @@ public class SignInpage {
 	public static boolean isForgotYourPasswordLinkVisible() {
 		return Keywords.isElementDisplayed("XPATH", forgotYourPasswordLink);
 	}
+	public static void isForgotYourPasswordLinkClickable() {
+		Keywords.clickOnElement("XPATH", forgotYourPasswordLink);
+	}
+	public static boolean isSignInWithGooglebuttonVisible() {
+		return signInWithGooglebutton.isDisplayed();
+	}
+	public static boolean isSignInWithFacebookbuttonVisible() {
+		return signInWithFacebookbutton.isDisplayed();
+	}
+	public static void isSignInWithGooglebuttonClickable() {
+		 signInWithGooglebutton.click();
+	}
+	public static void isSignInWithFacebookbuttonClickable() {
+		 signInWithFacebookbutton.click();
+	}
+	
+	
 
 }

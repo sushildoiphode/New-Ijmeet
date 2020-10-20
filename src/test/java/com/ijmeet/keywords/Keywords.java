@@ -7,6 +7,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -18,6 +19,10 @@ import java.util.Set;
 import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,6 +31,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.DataProvider;
 
 import com.ijmeet.util.Constant;
 
@@ -44,14 +50,17 @@ public class Keywords {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
 			Constant.driver = new ChromeDriver();
+			log.info("Open Browser Chrome");
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
 			Constant.driver = new FirefoxDriver();
+			log.info("Open Browser Firefox");
 			break;
 		case "IE":
 			WebDriverManager.iedriver().setup();
 			Constant.driver = new InternetExplorerDriver();
+			log.info("Open Browser Internate Explorer");
 			break;
 
 		default:
@@ -66,10 +75,12 @@ public class Keywords {
 
 	public static void clearCookies() {
 		Constant.driver.manage().deleteAllCookies();
+		log.info("Clean all Cookies");
 	}
 
 	public static void maximizeBrowser() {
 		Constant.driver.manage().window().maximize();
+		log.info("Window get maximize");
 	}
 
 	public static void navigateBack() {
@@ -184,6 +195,7 @@ public class Keywords {
 			Rectangle rect = new Rectangle(d);
 			BufferedImage image = robo.createScreenCapture(rect);
 			ImageIO.write(image, "png", file);
+			log.info("Screen shot save in Folder path "+ file);
 		} catch (AWTException e) {
 			System.err.println("unable to take Screenshot");
 			e.printStackTrace();
@@ -217,14 +229,16 @@ public class Keywords {
 			System.out.println("Folder not Created");
 		}
 		File file = new File(f, "/screenshot_" + getDateAndTime() + ".png");
+		
 		AShot ashot = new AShot();
 		Screenshot sc = ashot.shootingStrategy(ShootingStrategies.viewportPasting(2000))
 				.takeScreenshot(Constant.driver);
-		try {
-			ImageIO.write(sc.getImage(), "PNG", file);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+			try {
+				ImageIO.write(sc.getImage(), "PNG", file);
+				log.info("Screen shot save in Folder path "+ file);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 	}
 
 	public static int displayListCount(String locatorType, WebElement locatorValue) {
@@ -263,6 +277,63 @@ public class Keywords {
 			}
 		}
 		return url;
+	}
+	
+	
+	
+	@DataProvider(name="CredentialsData")
+	public static Object [][] credentialsProvider() throws IOException {
+		String path=System.getProperty("user.dir");
+		FileInputStream file=new FileInputStream(path+"\\target\\Data\\LoginData.xlsx");
+        XSSFWorkbook book=new XSSFWorkbook(file);
+        XSSFSheet sheet=book.getSheet("LoginCredentials");
+        int lastRow=sheet.getLastRowNum();
+        int lastcoloumn=sheet.getRow(0).getLastCellNum();
+        System.out.println("Row No-"+lastRow+" Coloumn No-"+lastcoloumn);
+        
+        Object [][]obj=new Object[lastRow][lastcoloumn-1];
+        for(int i=1;i<=lastRow;i++) {
+        	Row row=sheet.getRow(i)	;
+        	for (int j = 1; j < lastcoloumn; j++) {
+        		
+        	
+        		Cell cell=row.getCell(j);
+        		
+        		switch(cell.getCellType()) {
+        		
+        		case STRING :
+        			obj[i-1][j-1]=cell.getStringCellValue();
+        			
+        			break;
+        		
+        		case NUMERIC :
+        			obj[i-1][j-1]=cell.getNumericCellValue();
+        			break;	
+        			
+        		case BLANK :
+        			obj[i-1][j-1]="";
+        			break;
+        		case FORMULA :
+        			obj[i-1][j-1]=cell.getCellFormula();
+        			break;
+        			
+        		case BOOLEAN :
+        			obj[i-1][j-1]=cell.getBooleanCellValue();
+        			break;
+        			
+        			default:
+        				break;
+        		}
+        		
+				
+			}
+        	
+        }
+		
+		
+		return obj;
+	
+
 	}
 	
 	public static void closeBrowser() {

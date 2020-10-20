@@ -1,0 +1,8 @@
+2020-Oct-14 14:30:09,648 [main] com.ijmeet.keywords.Keywords 
+  INFO  Open Browser Chrome
+2020-Oct-14 14:30:45,886 [main] com.ijmeet.keywords.Keywords 
+  INFO   Url is launch successfully
+2020-Oct-14 14:30:53,588 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Email Address label is available on Sign In page
+2020-Oct-14 14:30:57,641 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Email Address textbox is visible on Sign In page

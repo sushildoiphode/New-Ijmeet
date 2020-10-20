@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-2020-Oct-18 13:35:29,375 [main] com.ijmeet.keywords.Keywords 
-  INFO   Url is launch successfully
-2020-Oct-18 13:35:49,185 [main] com.ijmeet.keywords.Keywords 
-  INFO   Invalid selector type
-2020-Oct-18 13:35:50,505 [main] com.ijmeet.keywords.Keywords 
-  INFO  ContactSalesPage is available for IJmeet
-=======
-<<<<<<< HEAD
-2020-Oct-14 14:36:08,622 [main] com.ijmeet.functionaltests.SignInPageTest 
-  INFO  If user click on Sign In with Google + button then it navigate to Gmail page. i.e Sign in – Google accounts
-2020-Oct-14 14:36:12,553 [main] com.ijmeet.functionaltests.SignInPageTest 
-  INFO  Sign in with Google + button is visible on Sign in page
-2020-Oct-14 14:36:16,508 [main] com.ijmeet.functionaltests.SignInPageTest 
-  INFO  Title name: IJmeet
-=======
-2020-Oct-14 14:36:18,360 [main] com.ijmeet.keywords.Keywords 
-  INFO   Url is launch successfully
 2020-Oct-14 14:02:06,759 [main] com.ijmeet.functionaltests.SignInPageTest 
   INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 
 2020-Oct-14 14:02:10,395 [main] com.ijmeet.functionaltests.SignInPageTest 
@@ -36,5 +18,3 @@
   INFO  Sign Up link visible true
 2020-Oct-14 14:02:51,711 [main] com.ijmeet.functionaltests.SignInPageTest 
   INFO  If user click on Sign In with Facebook button then it navigate to Facebook page. i.e Log in to Facebook | Facebook
->>>>>>> 92a3c74552fdeea781a8746f72751e33844b2746
->>>>>>> 1c517085e7cc743aab6810753640f6f556d93ea5

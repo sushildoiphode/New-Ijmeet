@@ -9,6 +9,9 @@
           <include name="closeBrowser"/>
           <include name="bisNameTextBoxClickableTest"/>
           <include name="initializePage"/>
+          <include name="clickOnSignInBtn"/>
+          <include name="closeBrowser"/>
+          <include name="verifyForgotYourPasswordVisibilityTest"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->

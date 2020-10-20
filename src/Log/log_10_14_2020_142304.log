@@ -1,0 +1,18 @@
+2020-Oct-14 14:23:04,346 [main] com.ijmeet.keywords.Keywords 
+  INFO  Open Browser Chrome
+2020-Oct-14 14:23:19,804 [main] com.ijmeet.keywords.Keywords 
+  INFO   Url is launch successfully
+2020-Oct-14 14:23:26,794 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Email Address label is available on Sign In page
+2020-Oct-14 14:23:30,773 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Email Address textbox is visible on Sign In page
+2020-Oct-14 14:23:36,530 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Forgot password link then it navigate to Reset Password page. i.e https://ijmeet.com/password/reset
+2020-Oct-14 14:23:45,400 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 
+2020-Oct-14 14:23:48,979 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 
+2020-Oct-14 14:23:53,300 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Password Label is available on Sign In page
+2020-Oct-14 14:23:57,429 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Password textbox is visible on Sign In page

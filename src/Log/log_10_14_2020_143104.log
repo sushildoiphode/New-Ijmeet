@@ -1,0 +1,20 @@
+2020-Oct-14 14:31:04,583 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Forgot password link then it navigate to Reset Password page. i.e https://ijmeet.com/password/reset
+2020-Oct-14 14:31:13,149 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 
+2020-Oct-14 14:31:16,781 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user enter invalid Email Adress then These credentials do not match our records error is displayed 
+2020-Oct-14 14:31:20,735 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Password Label is available on Sign In page
+2020-Oct-14 14:31:24,625 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Password textbox is visible on Sign In page
+2020-Oct-14 14:31:28,601 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Checkbox is Clickable
+2020-Oct-14 14:31:33,960 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign In button visible true
+2020-Oct-14 14:31:37,956 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign In heading text is available on Sign In page
+2020-Oct-14 14:31:48,457 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  If user click on Sign Up link then it navigate to Sign Up page. i.e https://ijmeet.com/register
+2020-Oct-14 14:31:52,452 [main] com.ijmeet.functionaltests.SignInPageTest 
+  INFO  Sign Up link visible true
