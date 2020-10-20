@@ -43,11 +43,11 @@ public class ContactSalesTest extends TestBase {
 		log.info("Name text box is availabel");
 	}
 	@Test
-	public void isNameTextBoxClickableTest() throws InterruptedException {
+	public void bisNameTextBoxClickableTest() throws InterruptedException {
 		contact.sendTextToUserNameCheckBox();
 		Thread.sleep(10000);
 		String actualValue=contact.getValueFromTextbox();
-		String expectedValue="Deepak Dude";
+		String expectedValue="Deepak Dudet";
 		System.out.println(actualValue);
 		Assert.assertEquals(actualValue, expectedValue);
 		log.info("We can click on Name textbox");
@@ -69,7 +69,7 @@ public class ContactSalesTest extends TestBase {
 		Assert.assertEquals(actualValue, expectedValue);
 		
 	}
-	
+
 	@Test
 	public void isMessageTextBoxAvailableTest() {
 		boolean verify=contact.isMessageCheckBoxVisible();

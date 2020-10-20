@@ -5,8 +5,9 @@
     <classes>
       <class name="com.ijmeet.functionaltests.ContactSalesTest">
         <methods>
-          <include name="toVerifyEmailIDText"/>
+          <include name="isNameTextBoxAvailableTest"/>
           <include name="closeBrowser"/>
+          <include name="bisNameTextBoxClickableTest"/>
           <include name="initializePage"/>
           <include name="clickOnSignInBtn"/>
           <include name="closeBrowser"/>

@@ -1,0 +1,8 @@
+2020-Oct-18 13:32:13,603 [main] com.ijmeet.keywords.Keywords 
+  INFO   Url is launch successfully
+2020-Oct-18 13:32:33,715 [main] com.ijmeet.keywords.Keywords 
+  INFO  We can click on Name textbox
+2020-Oct-18 13:32:35,837 [main] com.ijmeet.keywords.Keywords 
+  INFO   Invalid selector type
+2020-Oct-18 13:32:37,630 [main] com.ijmeet.keywords.Keywords 
+  INFO  ContactSalesPage is available for IJmeet
